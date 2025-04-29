@@ -1,0 +1,12 @@
+name: Say Hello
+
+on:
+  push:  # This runs the action every time you push code
+
+jobs:
+  hello-job:
+    runs-on: ubuntu-latest  # Uses a virtual machine with Linux
+
+    steps:
+      - name: Say Hello
+        run: echo "Hello, world! 👋"
